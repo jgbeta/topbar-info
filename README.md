@@ -32,7 +32,7 @@ You will see your LAN IP in the top panel, for example:
 
 # How It Works
 
-## 1️⃣ Installs Indicator-SysMonitor
+## 1️Installs Indicator-SysMonitor
 
 Uses the official PPA:
 
@@ -43,7 +43,7 @@ commands and displaying their output.
 
 ------------------------------------------------------------------------
 
-## 2️⃣ Creates a LAN IP Script
+## 2️Creates a LAN IP Script
 
 The installer writes:
 
@@ -63,7 +63,7 @@ Test it manually:
 
 ------------------------------------------------------------------------
 
-## 3️⃣ Configures Indicator-SysMonitor
+## 3️Configures Indicator-SysMonitor
 
 The installer writes/updates:
 
@@ -116,7 +116,7 @@ Boolean values are case-insensitive:
 
 ------------------------------------------------------------------------
 
-# 🔥 Extended Panel Mode (LAN + CPU + Memory + GPU)
+# Extended Panel Mode (LAN + CPU + Memory + GPU)
 
 You can enable a more detailed system panel display:
 
@@ -136,7 +136,7 @@ Uses built-in sensors:
 
 ------------------------------------------------------------------------
 
-## ⚠️ Panel Space Warning
+## Panel Space Warning
 
 On smaller screens, extended panel output can quickly consume available
 taskbar space.
