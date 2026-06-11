@@ -44,8 +44,8 @@ installing.
 After running:
 
 ``` bash
-chmod +x install.sh
-./install.sh
+chmod +x install_topbar.sh
+./install_topbar.sh
 ```
 
 You will see your LAN IP in the top panel, for example:
@@ -112,8 +112,8 @@ It:
 # Quick Install
 
 ``` bash
-chmod +x install.sh
-./install.sh
+chmod +x install_topbar.sh
+./install_topbar.sh
 ```
 
 The default install mode is interactive. The script prints the apt changes
@@ -128,13 +128,13 @@ system packages.
 Interactive default:
 
 ``` bash
-./install.sh
+./install_topbar.sh
 ```
 
 Unattended apt install:
 
 ``` bash
-APT_SETUP_MODE=auto ./install.sh
+APT_SETUP_MODE=auto ./install_topbar.sh
 ```
 
 Manual package setup example for Ubuntu 24.04 Noble. The installer
@@ -161,7 +161,7 @@ sudo apt-get install -y --no-install-recommends ca-certificates curl iproute2 py
 sudo add-apt-repository -y ppa:fossfreedom/indicator-sysmonitor
 sudo apt-get update
 sudo apt-get install -y indicator-sysmonitor
-APT_SETUP_MODE=skip ./install.sh
+APT_SETUP_MODE=skip ./install_topbar.sh
 ```
 
 Use `APT_SETUP_MODE=skip` only after the required packages and
@@ -175,7 +175,7 @@ writes the user-level LAN IP script and Indicator-SysMonitor config.
 Example:
 
 ``` bash
-SENSOR_NAME=lanip INTERVAL=1 CUSTOM_TEXT="{lanip}" ./install.sh
+SENSOR_NAME=lanip INTERVAL=1 CUSTOM_TEXT="{lanip}" ./install_topbar.sh
 ```
 
   Variable           Default                         Description
@@ -215,7 +215,7 @@ You can enable a more detailed system panel display:
 Enable it with:
 
 ``` bash
-CUSTOM_TEXT="lan: {lanip} | cpu: {cpu} | mem: {mem} | gpu: {nvgpu}" ./install.sh
+CUSTOM_TEXT="lan: {lanip} | cpu: {cpu} | mem: {mem} | gpu: {nvgpu}" ./install_topbar.sh
 ```
 
 Uses built-in sensors:
@@ -240,13 +240,13 @@ Possible issues:
 If needed, revert to minimal mode:
 
 ``` bash
-CUSTOM_TEXT="{lanip}" ./install.sh
+CUSTOM_TEXT="{lanip}" ./install_topbar.sh
 ```
 
 Or shorten it:
 
 ``` bash
-CUSTOM_TEXT="{lanip} | {cpu}" ./install.sh
+CUSTOM_TEXT="{lanip} | {cpu}" ./install_topbar.sh
 ```
 
 ------------------------------------------------------------------------
@@ -286,7 +286,7 @@ Test LAN IP script:
 Validate installer syntax:
 
 ``` bash
-bash -n install.sh
+bash -n install_topbar.sh
 ```
 
 ------------------------------------------------------------------------
